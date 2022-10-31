@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Probando VCard</title>
+    <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+</head>
+<body>
+<div class="card-wrapper">
+    <div class="card">
+        <div class="card-front">
+            <div class="left">
+                <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+                <h2 class="name-card-principal" th:text="${usuario.nombre+ ' '+ usuario.apellido}"></h2>
+            </div>
+            <div class="right">
+                <div class="person right-content">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h4 th:text="${usuario.nombre+' '+usuario.apellido}"></h4>
+                        <h4> Egresado de Desarrollo de Software</h4>
+
+                    </div>
+                </div>
+                <div class="phone right-content">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3> +593 979 937 851</h3>
+                    </div>
+                </div>
+                <div class="email right-content">
+                    <i class="fas fa-envelope-open"></i>
+                    <div>
+                        <p> david.becerra.est@tecazuay.edu.ec</p>
+                    </div>
+                </div>
+
+                <div class="address right-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p th:text="${ciudad.nombre}"></p>
+                        <p th:text="${sucursal.nombre}"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-back" >
+            <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+        </div>
+
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-front">
+            <div class="left">
+                <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+                <h2 class="name-card-principal" th:text="${usuario2.nombre+ ' '+ usuario2.apellido}"></h2>
+            </div>
+            <div class="right">
+                <div class="person right-content">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h4 th:text="${usuario2.nombre+' '+usuario2.apellido}"></h4>
+                        <h4> Egresado de Desarrollo de Software</h4>
+
+                    </div>
+                </div>
+                <div class="phone right-content">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3> +593 989 936 831</h3>
+                    </div>
+                </div>
+                <div class="email right-content">
+                    <i class="fas fa-envelope-open"></i>
+                    <div>
+                        <p> ricardo.becerra.est@tecazuay.edu.ec</p>
+                    </div>
+                </div>
+
+                <div class="address right-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p th:text="${ciudad2.nombre}"></p>
+                        <p th:text="${sucursal2.nombre}"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-back" >
+            <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+        </div>
+
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-front">
+            <div class="left">
+                <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+                <h2 class="name-card-principal" th:text="${usuario3.nombre+ ' '+ usuario3.apellido}"></h2>
+            </div>
+            <div class="right">
+                <div class="person right-content">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h4 th:text="${usuario3.nombre+' '+usuario3.apellido}"></h4>
+                        <h4> Egresado de Desarrollo de Software</h4>
+
+                    </div>
+                </div>
+                <div class="phone right-content">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3> +593 899 936 732</h3>
+                    </div>
+                </div>
+                <div class="email right-content">
+                    <i class="fas fa-envelope-open"></i>
+                    <div>
+                        <p> ayrthon.becerra.est@tecazuay.edu.ec</p>
+                    </div>
+                </div>
+
+                <div class="address right-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p th:text="${ciudad3.nombre}"></p>
+                        <p th:text="${sucursal3.nombre}"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-back" >
+            <img src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000">
+        </div>
+    </div>
+
+
+</body>
+</html>
